@@ -16,7 +16,7 @@ body
 h1
 {
 	font-family: calibri, verdana, serif;
-	font-size: 5em;
+	font-size: 8em;
 	margin: auto;
 	padding: 30px 100px;
 	flex: 2;	
@@ -24,12 +24,16 @@ h1
 
 h1 em
 {
-	font-size: 0.7em;
+	font-size: 0.5em;
     padding: 10px 20px 10px 15px;
     border-bottom: 2px rgba(51, 102, 255, 1) solid;
     
 }
 
+h1 strong
+{
+    color: rgba(51, 102, 255, 1);
+}
 
 
 h2
@@ -69,9 +73,11 @@ strong
 
 #colonnegauche
 {
+    font-family: calibri light, verdana, serif;
 	display: table-column;
 	background-color: rgba(51, 102, 255, 1);
-	width: 20%;	
+	width: 20%;
+    padding-bottom: 2%;
 }
 
 #colonnegauche h2
@@ -85,23 +91,43 @@ strong
     
 }
 
+
+.coordonnees
+
+{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px 30px 10px;
+    font-size:1.3em;
+    color: white;
+    padding: 5%;
+    
+}
+
+
+.coordonnees em
+{
+  font-size: 1.5em;
+  text-transform: uppercase;
+
+}
+
+
+
 #colonnegauche p
 {
-    padding: 30px 10px 30px 10px;
+    
     font-size:1.3em;
     color:white;
 }
 
-#colonnegauche p em
-{
-    font-size: 1.5em;
-    text-transform: uppercase;
-}
 
-#colonnegauche p a
+#colonnegauche  a
 {
     color:white;
     font-size: 1.2em;
+    text-decoration: none;
 }
 
 #colonnegauche img
@@ -110,14 +136,41 @@ strong
     max-width: 100%;
     height: auto;
     margin: 20px auto;
+    border-radius: 50%;
+    box-shadow: 2px 2px 15px black;
    
 }
 
-.loisirs p
+
+.apropos p
+{
+    padding: 5%;
+}
+
+
+
+.loisirs .logos
 {
     display: flex;
     justify-content: space-around;
+    padding-top: 5%;
     
+  
+}
+
+#cercle
+{
+  background: rgba(51, 102, 255, 1);
+  border-radius:50%;
+  width:75px;
+  height:75px;
+  border:2px black solid;
+}
+
+#cercle i
+{
+   display: block;
+   margin: 15%;
 }
 
 
@@ -303,28 +356,18 @@ strong
    #cv
 {
 	display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 	word-wrap: break-word;
+    padding-right: 0px;
     
 	
 } 
     h1
 {
 	font-family: calibri, verdana, serif;
-	font-size: 3em;
-	margin: auto;
-	padding: 30px 50px;
-	flex: 2;	
+	font-size: 5em;
+    padding: 0px;
 }
-
-h1 em
-{
-	font-size: 0.7em;
-    padding: 10px 20px 10px 15px;
-    border-bottom: 2px rgba(51, 102, 255, 1) solid;
-    
-}
-
 
 
 h2
@@ -342,9 +385,11 @@ h2
 #colonnegauche
 {
 	display: flex;
-    flex-direction: row;
+    flex-direction: column;
 	background-color: rgba(51, 102, 255, 1);
     width: auto;
+    padding: 2%;
+    margin: 2%;
 }
 
 #colonnegauche h2
@@ -366,15 +411,11 @@ h2
     display: none;
 }
 
-.loisirs p 
-{
-    display: flex;
-    flex-direction: column;
-}
 
 .loisirs p i
 {
-   margin:5px;     
+   margin:5px;  
+   padding-bottom: 5%;
 }
 
 /*COLONNE DE DROITE*/
@@ -384,8 +425,10 @@ h2
 
 #colonnedroite
 {
-	display: table-column;
+    display: flex;
+    flex-direction: column;
 	width: 100%;
+    margin: 2%;
 
 }
 
@@ -398,19 +441,27 @@ h2
 	padding-bottom: 7px;
 
 }
+    
+    
 
 #colonnedroite p
-{
+{  
   text-align: left;
   width: 70%;
   flex-basis: 60%;
   margin-top: 0px;
   margin-bottom: 30px;
-  word-wrap: break-word;  
+  word-wrap: break-word;
 }
 
 /*Formation*/
 
+    
+.formation
+ {
+    padding-top: 5%;
+ }
+    
 
 .conteneurformation i
 {
