@@ -50,6 +50,7 @@ h4
     
 	font-size: 4vw;
     margin: 0.5%;
+    text-transform: uppercase;
    
 }
 
@@ -59,6 +60,7 @@ h3
     font-size: 4vw;
     margin: 0.5%;
     color: rgba(51, 102, 255, 1);
+    text-transform: uppercase;
 }
 
 
@@ -135,7 +137,7 @@ h1 em
     display: block;
     max-width: 100%;
     height: auto;
-    margin: 20px auto;
+    margin: 30% auto 30% auto;
     border-radius: 50%;
     box-shadow: 2px 2px 15px black;
    
@@ -426,6 +428,10 @@ h1 em
         font-size: 5vw;
     }
 
+        #colonnegauche img
+    {
+        margin: 4% auto 4% auto;
+    }
         .logos
     {
           
