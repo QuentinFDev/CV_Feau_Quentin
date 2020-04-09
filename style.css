@@ -16,7 +16,7 @@ body
 h1
 {
 	font-family: calibri, verdana, serif;
-	font-size: 8em;
+	font-size: 6vw;
 	margin: auto;
 	padding: 30px 100px;
 	flex: 2;	
@@ -24,7 +24,7 @@ h1
 
 h1 em
 {
-	font-size: 0.5em;
+	font-size: 3vw;
     padding: 10px 20px 10px 15px;
     border-bottom: 2px rgba(51, 102, 255, 1) solid;
     
@@ -39,23 +39,10 @@ h1 strong
 h2
 {
 	font-family: calibri, verdana;
-	font-size: 2em;
+	font-size: 2vw;
 	margin-left: 5px;
 	text-transform: uppercase;
 	
-}
-
-
-p
-{
-	font-family: calibri light, verdana, serif;
-	font-size: 1em;
-}
-
-
-strong
-{
-    padding: 0px;
 }
 
 
@@ -65,7 +52,7 @@ strong
     padding: auto;
     width: auto;
     font-family: calibri light, verdana, serif;
-	font-size: 1em;
+	font-size: 1.2vw;
 }
 
 
@@ -98,35 +85,26 @@ strong
     
     display: flex;
     flex-direction: column;
-    padding: 30px 10px 30px 10px;
-    font-size:1.3em;
     color: white;
-    padding: 5%;
+    padding: 6%;
     
 }
 
 
-.coordonnees em
+.coordonnees p
 {
-  font-size: 1.5em;
-  text-transform: uppercase;
-
-}
-
-
-
-#colonnegauche p
-{
-    
-    font-size:1.3em;
+    font-size:1.7vw;
+    text-transform: uppercase;
     color:white;
+    margin: 5px;
+    font-weight: bold;
 }
 
 
 #colonnegauche  a
 {
     color:white;
-    font-size: 1.2em;
+    font-size: 1.2vw;
     text-decoration: none;
 }
 
@@ -145,11 +123,14 @@ strong
 .apropos p
 {
     padding: 5%;
+    font-size:1.5vw;
+    color:white;
+    
 }
 
 
 
-.loisirs .logos
+.logos
 {
     display: flex;
     justify-content: space-around;
@@ -204,6 +185,8 @@ strong
   flex-basis: 60%;
   margin-top: 0px;
   margin-bottom: 30px;
+  font-family: calibri light, verdana, serif;
+  font-size: 1.1vw;
 }
 
 /*Formation*/
@@ -350,182 +333,232 @@ strong
 
 
 
-@media screen and (max-width:1400px)
+@media screen and (max-width:1280px)
 {   
     
-   #cv
-{
-	display: flex;
-    flex-direction: column-reverse;
-	word-wrap: break-word;
-    padding-right: 0px;
+        #cv
+    {
+	   display: flex;
+        flex-direction: column-reverse;
+	   word-wrap: break-word;
+        padding-right: 0px;	
+    } 
     
-	
-} 
-    h1
-{
-	font-family: calibri, verdana, serif;
-	font-size: 5em;
-    padding: 0px;
-}
+        h1
+    {
+        padding: 0px;
+        font-size: 10vw;
+        
+    }
 
+        h1 em
+    {
+        font-size: 6vw;
+    }
 
-h2
-{
-	font-family: calibri, verdana;
-	font-size: 1.5em;
-	margin-left: 5px;
-	text-transform: uppercase;
-	
-}
+        h2
+    {
+	   font-size: 6vw;
+	   margin-left: 5px;	
+    }
 
 
 /*Colonne de gauche*/
 
-#colonnegauche
-{
-	display: flex;
-    flex-direction: column;
-	background-color: rgba(51, 102, 255, 1);
-    width: auto;
-    padding: 2%;
-    margin: 2%;
-}
+        #colonnegauche
+    {
+	    display: flex;
+        flex-direction: column;
+        width: auto;
+        padding: 2%;
+        margin: 2%;
+    }
 
-#colonnegauche h2
-{
-    padding: 0px 10px;
-    border-top: 10px rgba(51,102,255,1) solid;
+        #colonnegauche h2
+    {
+        padding: 0px 10px;
+        border-top: 10px rgba(51,102,255,1) solid;
+    }
     
-}
-#colonnegauche p
-{
-    padding: 30px 10px 30px 10px;
-    font-size:1em;
-    color:white;
-}
+        #colonnegauche p
+    {
+        font-size:5vw;
+        color:white;
+        margin: 1px;
+    }
 
+        #colonnegauche a
+    {
+        font-size: 5vw;
+    }
 
-#colonnegauche img
-{
-    display: none;
-}
+        .logos
+    {
+          
+        padding-bottom: 5%;
+    }
+    
+    
+        #cercle
+    {
+        background: rgba(51, 102, 255, 1);
+        border-radius:50%;
+        width:12vw;
+        height:12vw;
+        border:2px black solid;
+    }
 
-
-.loisirs p i
-{
-   margin:5px;  
-   padding-bottom: 5%;
-}
+        #cercle i
+    {
+        display: block;
+        font-size: 7.5vw;
+        
+    }
 
 /*COLONNE DE DROITE*/
 
 
 
 
-#colonnedroite
-{
-    display: flex;
-    flex-direction: column;
-	width: 100%;
-    margin: 2%;
+        #colonnedroite
+    {
+        display: flex;
+        flex-direction: column;
+	   width: 100%;
+        margin: 2%;
 
-}
+    }
 
 
-#colonnedroite h2
-{
-	border-color: rgba(51, 102, 255, 1);
-	border-width: 2px;
-	border-style: none none solid none;
-	padding-bottom: 7px;
+        #colonnedroite h2
+    {
+	   border-color: rgba(51, 102, 255, 1);
+	   border-width: 2px;
+	   border-style: none none solid none;
+	   padding-bottom: 7px;
 
-}
+    }
     
-    
+        .date
+    {
+        font-size: 4vw;
+        margin-bottom: 4%;
+    }
 
-#colonnedroite p
-{  
-  text-align: left;
-  width: 70%;
-  flex-basis: 60%;
-  margin-top: 0px;
-  margin-bottom: 30px;
-  word-wrap: break-word;
-}
+        #colonnedroite p
+    {  
+        text-align: left;
+        width: 70%;
+        flex-basis: 60%;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        word-wrap: break-word;
+        font-size: 3.5vw;
+    }
 
 /*Formation*/
 
     
-.formation
- {
-    padding-top: 5%;
- }
+        .formation
+    {
+        padding-top: 5%;
+    }
     
 
-.conteneurformation i
-{
-    display: none;
-}
+        .conteneurformation i
+    {
+        display: none;
+    }
 
 
-.mars2020
-{
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
+        .mars2020
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
    
     
-}
+    }
 
-.sept2014
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+        .sept2014
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     
-}
+    }
 
-.sept2010
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+        .sept2010
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     
-}
+    }
 
 
 /*Expériences Pro*/
 
-.conteneurexppro i
-{
-    display: none;
-}
+        .conteneurexppro i
+    {
+        display: none;
+    }
 
 
-.sept2020
-{
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
+        .sept2020
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
    
     
-}
+    }
 
-.mars2015
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+        .mars2015
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     
-}
+    }
 
-.janv2015
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around; 
+        .janv2015
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; 
     
-}
+    }
 
+/*DIPLOMES*/
+    
+        .conteneurdiplomes i
+    {
+        display: none;
+    }
+
+
+        .nov2018
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+   
+    
+    }
+
+        .mars2015dip
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    
+    }
+
+        .juin2012
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; 
+    }    
 }
