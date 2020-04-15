@@ -27,7 +27,6 @@ h2
 .date
 {
     color: rgba(51, 102, 255, 1);
-    padding: auto;
     width: auto;
     font-family: calibri light, verdana, serif;
     font-size: 1.2vw;
@@ -122,10 +121,15 @@ h1 em
     font-size:1.7vw;
     text-transform: uppercase;
     color:white;
-    margin: 5px;
+    margin: 1% 1% 7% 1%;
     font-weight: bold;
 }
 
+.coordonnees h5
+{
+    font-weight: normal;
+    margin: 0;
+}
 
 #colonnegauche  a
 {
@@ -228,7 +232,6 @@ h1 em
 .conteneurformation i
 {
     color: rgba(51, 102, 255, 1);
-    padding: auto;
     width: auto;
 }
 
@@ -273,7 +276,6 @@ h1 em
 .conteneurexppro i
 {
     color: rgba(51, 102, 255, 1);
-    padding: auto;
     width: auto;
 }
 
@@ -318,7 +320,6 @@ h1 em
 .conteneurdiplomes i
 {
     color: rgba(51, 102, 255, 1);
-    padding: auto;
     width: auto;
 }
 
