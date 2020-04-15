@@ -8,19 +8,19 @@ body
 
 #cv
 {
-	display: flex;
-	word-wrap: break-word;
-	
+    display: flex;
+    word-wrap: break-word;
+
 }
 
 
 h2
 {
-	font-family: calibri, verdana;
-	font-size: 2vw;
-	margin-left: 5px;
-	text-transform: uppercase;
-	
+    font-family: calibri, verdana;
+    font-size: 2vw;
+    margin-left: 5px;
+    text-transform: uppercase;
+
 }
 
 
@@ -30,7 +30,7 @@ h2
     padding: auto;
     width: auto;
     font-family: calibri light, verdana, serif;
-	font-size: 1.2vw;
+    font-size: 1.2vw;
 }
 
 
@@ -38,25 +38,25 @@ h2
 
 .nomprenom
 {
-  font-family: calibri, verdana;
-  display: flex;
-  padding-top: 5%;
-  
-    
+    font-family: calibri, verdana;
+    display: flex;
+    padding-top: 5%;
+
+
 }
 
 h4
 {
-    
-	font-size: 4vw;
+
+    font-size: 4vw;
     margin: 0.5%;
     text-transform: uppercase;
-   
+
 }
 
 h3
 {
-    
+
     font-size: 4vw;
     margin: 0.5%;
     color: rgba(51, 102, 255, 1);
@@ -66,15 +66,15 @@ h3
 
 h1
 {
-	font-family: calibri, verdana, serif;
-	font-size: 4vw;
-    
+    font-family: calibri, verdana, serif;
+    font-size: 4vw;
+
 }
 
 h1 em
 {
-   font-style: normal;
-   border-bottom: 2px rgba(51, 102, 255, 1) solid; 
+    font-style: normal;
+    border-bottom: 2px rgba(51, 102, 255, 1) solid; 
 }
 
 
@@ -85,33 +85,35 @@ h1 em
 #colonnegauche
 {
     font-family: calibri light, verdana, serif;
-	display: table-column;
-	background-color: rgba(51, 102, 255, 1);
-	width: 25%;
+    background-color: rgba(51, 102, 255, 1);
+    width: 25%;
     padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+
 }
 
 #colonnegauche h2
 {
-	background-color: white;
-	color: rgba(51, 102, 255, 1);
-	text-align: center;	
-	margin: 0px;
+    background-color: white;
+    color: rgba(51, 102, 255, 1);
+    text-align: center;	
+    margin: 0px;
     border-right: 5px rgba(51, 102, 255, 1) solid;
     border-left: 5px rgba(51, 102, 255, 1) solid;
-    
+
 }
 
 
 .coordonnees
 
 {
-    
+
     display: flex;
     flex-direction: column;
     color: white;
     padding: 6%;
-    
+
 }
 
 
@@ -140,16 +142,21 @@ h1 em
     margin: 30% auto 30% auto;
     border-radius: 50%;
     box-shadow: 2px 2px 15px black;
-   
+
 }
 
+.apropos
+{
+    flex-grow: 1;
+}
 
 .apropos p
 {
     padding: 5%;
-    font-size:1.5vw;
+    font-size:1.2vw;
     color:white;
-    
+
+
 }
 
 
@@ -159,23 +166,28 @@ h1 em
     display: flex;
     justify-content: space-around;
     padding-top: 5%;
-    
-  
+
+
 }
 
-#cercle
+.cercle
 {
-  background: rgba(51, 102, 255, 1);
-  border-radius:50%;
-  width:75px;
-  height:75px;
-  border:2px black solid;
+    background: rgba(51, 102, 255, 1);
+    border-radius:50%;
+    width:75px; 
+    display: flex;
+    height:75px;
+    border:2px black solid;
+    justify-content: center;
+
+
 }
 
-#cercle i
+.cercle i
 {
-   display: block;
-   margin: 15%;
+    display: block;
+    margin: 15%;
+
 }
 
 
@@ -183,31 +195,31 @@ h1 em
 
 #colonnedroite
 {
-	display: table-column;
-	width: 80%;
-	margin-left: 4%;
-	margin-right: 4%;
+    display: table-column;
+    width: 80%;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 
 
 #colonnedroite h2
 {
-	border-color: rgba(51, 102, 255, 1);
-	border-width: 2px;
-	border-style: none none solid none;
-	padding-bottom: 7px;
+    border-color: rgba(51, 102, 255, 1);
+    border-width: 2px;
+    border-style: none none solid none;
+    padding-bottom: 7px;
 
 }
 
 #colonnedroite p
 {
-  text-align: left;
-  width: 70%;
-  flex-basis: 60%;
-  margin-top: 0px;
-  margin-bottom: 30px;
-  font-family: calibri light, verdana, serif;
-  font-size: 1.1vw;
+    text-align: left;
+    width: 70%;
+    flex-basis: 60%;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-family: calibri light, verdana, serif;
+    font-size: 1.1vw;
 }
 
 /*Formation*/
@@ -223,10 +235,10 @@ h1 em
 
 .mars2020
 {
-   display: flex;
-   justify-content: space-around;
-   flex-wrap: wrap;
-    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
 }
 
 .sept2014
@@ -245,7 +257,7 @@ h1 em
 
 .formation i
 {
-   flex-basis: 10%; 
+    flex-basis: 10%; 
 }
 
 
@@ -268,10 +280,10 @@ h1 em
 
 .sept2020
 {
-   display: flex;
-   justify-content: space-around;
-   flex-wrap: wrap;
-    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
 }
 
 .mars2015
@@ -290,7 +302,7 @@ h1 em
 
 .exppro i
 {
-   flex-basis: 10%; 
+    flex-basis: 10%; 
 }
 
 
@@ -299,7 +311,7 @@ h1 em
     flex-basis: 30%;
 }
 
-   
+
 /*DIPLOMES*/
 
 
@@ -313,10 +325,10 @@ h1 em
 
 .nov2018
 {
-   display: flex;
-   justify-content: space-around;
-   flex-wrap: wrap;
-    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
 }
 
 .mars2015dip
@@ -335,7 +347,7 @@ h1 em
 
 .diplomes i
 {
-   flex-basis: 10%; 
+    flex-basis: 10%; 
 }
 
 
@@ -356,87 +368,87 @@ h1 em
 
 @media screen and (max-width:1280px)
 {   
-    
-        #cv
+
+    #cv
     {
-	   display: flex;
+        display: flex;
         flex-direction: column-reverse;
-	   word-wrap: break-word;
+        word-wrap: break-word;
         padding-right: 0px;	
     } 
-    
 
-        h2
+
+    h2
     {
-	   font-size: 6vw;
-	   margin-left: 5px;	
+        font-size: 6vw;
+        margin-left: 5px;	
     }
 
-    
-/*HEADER*/
-    
 
-        h4
+    /*HEADER*/
+
+
+    h4
     {
-    
-	   font-size: 10vw;
-   
+
+        font-size: 10vw;
+
     }
 
-        h3
+    h3
     {
-    
+
         font-size: 10vw;
     }
 
 
-        h1
+    h1
     {
-	   font-size: 8vw;
-    
+        font-size: 8vw;
+
     }
 
-/*Colonne de gauche*/
+    /*Colonne de gauche*/
 
-        #colonnegauche
+    #colonnegauche
     {
-	    display: flex;
+        display: flex;
         flex-direction: column;
         width: auto;
         padding: 2%;
         margin: 2%;
     }
 
-        #colonnegauche h2
+    #colonnegauche h2
     {
         padding: 0px 10px;
         border-top: 10px rgba(51,102,255,1) solid;
     }
-    
-        #colonnegauche p
+
+    #colonnegauche p
     {
         font-size:5vw;
         color:white;
         margin: 1px;
     }
 
-        #colonnegauche a
+    #colonnegauche a
     {
         font-size: 5vw;
     }
 
-        #colonnegauche img
+    #colonnegauche img
     {
         margin: 4% auto 4% auto;
     }
-        .logos
+    .logos
     {
-          
+
         padding-bottom: 5%;
     }
-    
-    
-        #cercle
+
+
+    #cercle
     {
         background: rgba(51, 102, 255, 1);
         border-radius:50%;
@@ -445,44 +457,44 @@ h1 em
         border:2px black solid;
     }
 
-        #cercle i
+    #cercle i
     {
         display: block;
         font-size: 7.5vw;
-        
+
     }
 
-/*COLONNE DE DROITE*/
+    /*COLONNE DE DROITE*/
 
 
 
 
-        #colonnedroite
+    #colonnedroite
     {
         display: flex;
         flex-direction: column;
-	   width: 100%;
+        width: 100%;
         margin: 2%;
 
     }
 
 
-        #colonnedroite h2
+    #colonnedroite h2
     {
-	   border-color: rgba(51, 102, 255, 1);
-	   border-width: 2px;
-	   border-style: none none solid none;
-	   padding-bottom: 7px;
+        border-color: rgba(51, 102, 255, 1);
+        border-width: 2px;
+        border-style: none none solid none;
+        padding-bottom: 7px;
 
     }
-    
-        .date
+
+    .date
     {
         font-size: 4vw;
         margin-bottom: 4%;
     }
 
-        #colonnedroite p
+    #colonnedroite p
     {  
         text-align: left;
         width: 70%;
@@ -493,106 +505,106 @@ h1 em
         font-size: 3.5vw;
     }
 
-/*Formation*/
+    /*Formation*/
 
-    
-        .formation
+
+    .formation
     {
         padding-top: 5%;
     }
-    
 
-        .conteneurformation i
+
+    .conteneurformation i
     {
         display: none;
     }
 
 
-        .mars2020
+    .mars2020
     {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-   
-    
+
+
     }
 
-        .sept2014
+    .sept2014
     {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-    
+
     }
 
-        .sept2010
+    .sept2010
     {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-    
+
     }
 
 
-/*Expériences Pro*/
+    /*Expériences Pro*/
 
-        .conteneurexppro i
+    .conteneurexppro i
     {
         display: none;
     }
 
 
-        .sept2020
+    .sept2020
     {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-   
-    
+
+
     }
 
-        .mars2015
+    .mars2015
     {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-    
+
     }
 
-        .janv2015
+    .janv2015
     {
         display: flex;
         flex-direction: column;
         justify-content: space-around; 
-    
+
     }
 
-/*DIPLOMES*/
-    
-        .conteneurdiplomes i
+    /*DIPLOMES*/
+
+    .conteneurdiplomes i
     {
         display: none;
     }
 
 
-        .nov2018
+    .nov2018
     {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-   
-    
+
+
     }
 
-        .mars2015dip
+    .mars2015dip
     {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-    
+
     }
 
-        .juin2012
+    .juin2012
     {
         display: flex;
         flex-direction: column;
