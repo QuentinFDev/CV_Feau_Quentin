@@ -1,36 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css"/>
         <title>CV Féau Quentin</title>
-        <meta name="description" content="CV Quentin Féau HTML CSS">
+        <meta name="description" content="CV de Quentin Féau format Web">
         <meta name="keywords" content="HTML,CSS">
         <meta name="author" content="Quentin Féau">
+        <!--twitter, discord-->
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@QuentinFDEV">
         <meta name="twitter:title" content="CV Féau Quentin">
         <meta name="twitter:description" content="CV de Quentin Féau Développeur WEB">
         <meta name="twitter:creator" content="@QuentinFDEV">
         <meta name="twitter:image" content="https://urlz.fr/coS5">
+        <!--facebook-->
         <meta property="og:title" content="CV Féau Quentin" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://quentinfdev.github.io/CV_Feau_Quentin/" />
         <meta property="og:image" content="https://urlz.fr/coS5" />
         <meta property="og:description" content="CV de quentin féau développeur WEB" /> 
         <script src="https://kit.fontawesome.com/29d0c15e9b.js" crossorigin="anonymous"></script>
-        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <!--permet au site web visité d'utiliser un affichage différent en fonction du navigateur utilisé-->
     </head>
     <body>
         <section id="cv">
-            <section id="colonnegauche">
-                <img src="images/quentin%20f%C3%A9au-mini.jpg" alt="photo de quentin féau"/>
+            <!--Partie gauche-->
+            <div id="colonnegauche"><!--partie gauche et droite en standard, partie gauche devient bas et partie droite devient haut en responsive-->
+                <img src="images/quentin%20f%C3%A9au-mini.jpg" alt="photo de quentin féau"/><!--photo dans le dossier image-->
                 <article class="contact">
                     <h2>Contact</h2>
                     <div class="coordonnees">
                         <p>Féau Quentin</p>
                         <p>25ans, Permis B</p>
-                        <address><a href="https://www.google.fr/maps/place/79000+Niort/@46.3274304,-0.4963253,13z/data=!3m1!4b1!4m5!3m4!1s0x4807303211d686f5:0x405d39260e82ac0!8m2!3d46.323716!4d-0.464777"><strong>Adresse:</strong> NIORT, 5rue louis breguet FRANCE</a></address>
+                        <address><a href="https://www.google.fr/maps/place/79000+Niort/@46.3274304,-0.4963253,13z/data=!3m1!4b1!4m5!3m4!1s0x4807303211d686f5:0x405d39260e82ac0!8m2!3d46.323716!4d-0.464777"><strong>Adresse:</strong> NIORT, FRANCE</a></address>
                         <h5><a href="tel:+33620103204"><strong>Téléphone:</strong> 06.69.26.34.92</a></h5>
                         <h5><a href="mailto:quentin.feau@gmail.com"><strong>E-mail:</strong> quentin.feau@rt-drone.com</a></h5>
                         <h5><a href="http://www.rt-drone.com"><strong>Site web:</strong> www.rt-drone.com</a></h5>
@@ -48,30 +52,27 @@
                         <div class="cercle"><i class="fas fa-desktop fa-3x"></i></div>
                     </div>
                 </article>
-            </section>
-            <section id="colonnedroite">
+            </div>
+            <!--Partie droite-->
+            <div id="colonnedroite">
+                <!--HEADER-->
                 <header class="titre">
-                    <div class="nomprenom">
-                        <h3>Féau</h3>
-                        <h4>Quentin</h4>
-                    </div>
-                    <h1><em>Développeur</em> WEB</h1>
+                    <h1>Féau<em>Quentin</em></h1> 
+                    <h3><em>Développeur</em> WEB</h3>
                 </header>
+                <!--Partie FORMATION-->
                 <article class="formation">
                     <h2><i class="fas fa-school"></i> Formation</h2>
-                    <div class="conteneurformation">
+                    <div class="conteneurformation"><!--div en flex row avec le i, div, p-->
                         <div class="mars2020">
-                            <i class="fas fa-circle"></i>
+                            <i class="fas fa-circle"></i> <!--logo rond rempli font awesome-->
                             <div class="date">Mars-Septembre 2020<br/>Niort (79)</div>
                             <p><strong>Openclassrooms, formation en ligne</strong><br/>Développeur WEB</p>
                         </div>
-
-
                         <div class="sept2014">
-                            <i class="far fa-circle"></i>
+                            <i class="far fa-circle"></i><!--logo rond vide font awesome-->
                             <div class="date">2014-2015<br/>Montmorillon (86)</div>
                             <p><strong>Lycée Raoul Mortier, BZEE</strong><br/>Formation complémentaire de technicien de maintenance en parc éolien, certification reconnu mondialement.</p>
-
                         </div>
                         <div class="sept2010">
                             <i class="far fa-circle"></i>
@@ -80,6 +81,7 @@
                         </div>	
                     </div>
                 </article>
+                <!--Partie expériences professionnelles-->
                 <article class="exppro">
                     <h2><i class="fas fa-suitcase"></i> Experiences professionnelles</h2>
                     <div class="conteneurexppro">
@@ -102,6 +104,7 @@
                         </div>
                     </div>
                 </article>
+                <!--Partie Diplomes-->
                 <article class="diplomes">
                     <h2><i class="fas fa-graduation-cap"></i> Diplomes</h2>
                     <div class="conteneurdiplomes">
@@ -124,7 +127,7 @@
                         </div>
                     </div>
                 </article>
-            </section>
+            </div>
         </section>
     </body>
 </html>
